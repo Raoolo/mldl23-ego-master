@@ -167,7 +167,7 @@ class EpicKitchensDataset(data.Dataset, ABC):
     def _load_data(self, modality, record, idx):
         data_path = self.dataset_conf[modality].data_path
         tmpl = self.dataset_conf[modality].tmpl
-
+        print(idx)
         if modality == 'RGB' or modality == 'RGBDiff':
             # here the offset for the starting index of the sample is added
 
