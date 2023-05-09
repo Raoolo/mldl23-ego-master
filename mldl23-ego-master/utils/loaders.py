@@ -87,6 +87,7 @@ class EpicKitchensDataset(data.Dataset, ABC):
             for centroid in centroids:
                 intervals.extend(list(range(centroid - 7, centroid + 9)))
 
+        print(intervals)
         return intervals
 
     def _get_val_indices(self, record, modality):
